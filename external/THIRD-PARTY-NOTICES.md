@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-White Knuckle VR is licensed under the GNU General Public License v3.0 or later (see `LICENSE`).
+White Knuckle VR is licensed under the GNU General Public License v3.0 or later (see `LICENSE` beside this file).
 
 This archive also redistributes the components listed below, which are **not** part of White Knuckle
 VR and are **not** covered by its GPL licence. They are included unmodified so that the mod has an
@@ -18,7 +18,7 @@ Copyright (C) 2017-2025 The Khronos Group Inc. and others
 **Project:** OpenXR-SDK-Source — https://github.com/KhronosGroup/OpenXR-SDK-Source
 **Licence:** Apache License 2.0
 
-The full licence text is in `licenses/OpenXR-SDK-LICENSE.txt`, a verbatim copy of the `LICENSE`
+The full licence text is in `third-party-licenses/OpenXR-SDK-LICENSE.txt`, a verbatim copy of the `LICENSE`
 file distributed with the OpenXR-SDK (11,358 bytes, MD5 `3b83ef96387f14655fc854ddc3c6bd57`). The
 copyright line above is the `LegalCopyright` field recorded in the shipped binary itself. The
 OpenXR-SDK distributes no `NOTICE` file, so Apache 2.0 section 4(d) does not apply.

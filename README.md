@@ -153,12 +153,12 @@ Many tunable parameters are available in this file which affect the implementati
 
 ## License
 
-White Knuckle VR Mod is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License, version 3 or (at your option) any later version**, as published by the Free Software Foundation. See [LICENSE](LICENSE) for the full text.
+White Knuckle VR Mod is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License, version 3 or (at your option) any later version**, as published by the Free Software Foundation. The full text is in `WhiteKnuckleVR/LICENSE` in the release.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 Copyright (C) 2026 Kyanite-Rock
 
-This archive also includes the OpenXR runtime files that White Knuckle doesn't ship, from The Khronos Group and Unity Technologies. They are not part of this mod and are not covered by its GPL licence — see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+This archive also includes the OpenXR runtime files that White Knuckle doesn't ship, from The Khronos Group and Unity Technologies. They are not part of this mod and are not covered by its GPL licence — see `WhiteKnuckleVR/THIRD-PARTY-NOTICES.md` in the release archive.
 
 White Knuckle is the property of its developers and publisher. This mod is an unofficial, unaffiliated fan project and redistributes none of the game's files.
