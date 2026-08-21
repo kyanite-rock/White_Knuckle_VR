@@ -6,6 +6,8 @@ Features stereo rendering, roomscale movement, and 6DOF gesture-based motion con
 
 Physical item interactions are not yet supported. This is something I'd like to add in the future, but it will likely require significant effort.
 
+https://buymeacoffee.com/kyaniterock
+
 ## Installation
 
 1. Download BepInEx from https://github.com/BepInEx/BepInEx/releases/latest, copy the zip into your game folder, and extract it into your White Knuckle game folder. Take the **x64** build — the file named `BepInEx_win_x64_5.x.x.x.zip`. The x86 and IL2CPP versions won't work.
