@@ -34,7 +34,7 @@ Set `activateVR` to `false` in `BepInEx/config/VRToggle.json` and relaunch. The 
 | **Grip** | Grab a handhold |
 | **Trigger** | Interact with buttons and levers; pick up items; use a held item |
 | **A** | Jump |
-| **B** | Quick-pocket right / Cancel in menu or terminal |
+| **B** | Quick-pocket right / Hold to drop item / Cancel in menu or terminal |
 | **Stick** | Turn (left/right). Smooth or snap, set in the VR settings menu. |
 | **Stick click** | Toggle crouch |
 | **Menu button** | Maps to the gamepad Select button |
@@ -46,7 +46,7 @@ Set `activateVR` to `false` in `BepInEx/config/VRToggle.json` and relaunch. The 
 | **Grip** | Grab a handhold |
 | **Trigger** | Interact with buttons and levers; pick up items; use a held item |
 | **X** | Open / close inventory. Hold to open the pause menu. |
-| **Y** | Quick-pocket left |
+| **Y** | Quick-pocket right / Hold to drop item |
 | **Stick** | Walk and strafe. Also climbs, unless `climbMode` is set to Gesture Only. |
 | **Stick click** | Sprint |
 | **Menu button** | Pause / Open Menu |
