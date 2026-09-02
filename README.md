@@ -6,15 +6,11 @@ Features stereo rendering, roomscale movement, and 6DOF gesture-based motion con
 
 Physical item interactions are not yet supported. This is something I'd like to add in the future, but it will likely require significant effort.
 
-https://buymeacoffee.com/kyaniterock
-
 ## Installation
 
-1. Download BepInEx from https://github.com/BepInEx/BepInEx/releases/latest, copy the zip into your game folder, and extract it into your White Knuckle game folder. Take the **x64** build — the file named `BepInEx_win_x64_5.x.x.x.zip`. The x86 and IL2CPP versions won't work.
-2. Download the latest White Knuckle VR release zip folder, and extract it into your White Knuckle game folder.
-   `BepInEx/plugins/WhiteKnuckleVRMod.dll` will land next to BepInEx's own files.
-3. Launch the game once. It will run in flatscreen mode, and create the necessary config files. Once you reach the main menu, close the game.
-4. Launch the game again, with an active VR runtime. The game should now launch in VR.
+1. Install through Thunderstore
+2. Activate your VR runtime (OpenXR or SteamVR), and launch the game. The game will launch once in flatscreen. Close the game.
+3. Launch the game with your VR runtime active. It should launch into VR.
 
 The first launch writes three config files into `BepInEx/config/`. See
 [The VR settings menu](#the-vr-settings-menu).
@@ -36,7 +32,7 @@ Set `activateVR` to `false` in `BepInEx/config/VRToggle.json` and relaunch. The 
 | **A** | Jump |
 | **B** | Quick-pocket right / Hold to drop item / Cancel in menu or terminal |
 | **Stick** | Turn (left/right). Smooth or snap, set in the VR settings menu. |
-| **Stick click** | Toggle crouch |
+| **Stick click** | Toggle crouch. Hold to open the pause menu (toggle crouch mode only). |
 | **Menu button** | Maps to the gamepad Select button |
 
 ### Left controller
@@ -45,15 +41,11 @@ Set `activateVR` to `false` in `BepInEx/config/VRToggle.json` and relaunch. The 
 |---|---|
 | **Grip** | Grab a handhold |
 | **Trigger** | Interact with buttons and levers; pick up items; use a held item |
-| **X** | Open / close inventory. Hold to open the pause menu. |
+| **X** | Open / close inventory. Hold to open the pause menu (toggle inventory mode only). |
 | **Y** | Quick-pocket right / Hold to drop item |
 | **Stick** | Walk and strafe. Also climbs, unless `climbMode` is set to Gesture Only. |
 | **Stick click** | Sprint |
 | **Menu button** | Pause / Open Menu |
-
-### Supported Headsets
-
-Any OpenXR headset should work, but only Quest 2 is tested. Special controls are avialable on Valve Index. On Index, you can use the triggers to climb, in addition to the grips. X and Y are A and B on the left controller, respectively, on Valve Index.
 
 ## Gestures
 
@@ -132,27 +124,16 @@ Many tunable parameters are available in this file which affect the implementati
 | `reachMultiplier` | `6` | A multiplier allowing you to reach past your physical hands. It is required for your VR reach to match your reach in the vanilla game. |
 | `vrHandScale` | `1` | Size of hand sprites |
 | `heldItemScale` | `1` | Size of held items relative to hand size |
-| `showInteractIndicators` | `true` | Show per-hand markers on grabbable objects |
-| `showSecondaryInteractIndicator` | `true` | When both a handhold and an item are in reach, highlight both. Grip grabs the ledge, trigger grabs the item. Not available on Valve Index.
 | `gripScheme` | `auto` | `auto` uses the trigger on Index and the grip everywhere else. `grip` or `trigger` can be used to force a specific climbing button. |
 | `indexGripGrabsLedges` | `true` | On the trigger scheme, the grip still grabs handholds |
-| `gripPressThreshold` / `gripReleaseThreshold` | `0.65` / `0.45` | Grip press and release points. Press threshold should be higher than release threshold. |
 | `menuHoldSeconds` | `0.5` | How long to hold left **X** to open the pause menu |
 | `gestureJumpEnabled` | `true` | Enable gesture-based jump |
 | `gestureSprintEnabled` | `true` | Enable gesture-based sprint |
 | `handSwapGestureEnabled` | `true` | Enable item swap gesture (note: there is no equivalent button to do this) |
 | `physicalCrouchEnabled` | `true` | Enable physical crouch|
 | `dynoEnabled` | `true` | Enable dyno / jump-from-wall gesture |
-| `throwGestureEnabled` | `true` | Enable throw gesture (note: there is no equivalent button to do this) |
-| `throwAppliesReleaseVelocity` | `false` | Adds your real hand speed to a throw. Breaks vanilla gameplay. |
-| `enablePositionalMovement` | `true` | Enables roomscale / 6DOF headset movement |
-| `cameraFadeOnClip` | `true` | Fades camera to black when your head clips through a wall |
+| `throwGestureEnabled` | `true` | Enable throw gesture |
 | `physicalCrouchDepth` | `0.25` | How far you must physically crouch to enter the crouched state |
-| `crouchCameraBlendSeconds` | `0.25` | Transition time when using the crouch button, does not apply to physical crouch. |
-| `bagDistance` / `bagShellRadius` | `0.45` / `0.65` | How far in front of your body the inventory sits, and how big it is |
-| `terminalCameraPullback` | `0.2` | Camera distance when interacting with a terminal |
-| `verboseLogging` | `false` | Increase mod logging level for debugging |
-
 ---
 
 ## Known limitations
@@ -160,7 +141,6 @@ Many tunable parameters are available in this file which affect the implementati
 - Physical item interactions are not yet implemented. I initially planned to do this, but there were a few major technical hurdles involved. So I decided to ship the mod without this to start with.
 - Held items are 2D sprites. This is one of the limitations which caused me to hold off on physical items. While every item has a 3D model, those models are not animated the way the 2D sprites are.
 - The VR mod renders in multi-pass rendering mode, because the game's custom shaders aren't compiled for single-pass rendering. This means that the mod can be performance intensive, which can be mitigated with the `renderScale` setting in the VR settings menu.
-- I did my best to support Valve Index controllers, but I don't have an Index and can't test it. I'd appreciate if there are any Index testers who can help me to get it to a good place. Feel free to create an issue to discuss any Index problems, or contact me in the Flat2VR Discord - I'll have a channel there.
 
 ---
 
