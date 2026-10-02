@@ -155,3 +155,5 @@ Copyright (C) 2026 Kyanite-Rock
 This archive also includes the OpenXR runtime files that White Knuckle doesn't ship, from The Khronos Group and Unity Technologies. They are not part of this mod and are not covered by its GPL licence — see `WhiteKnuckleVR/THIRD-PARTY-NOTICES.md` in the release archive.
 
 White Knuckle is the property of its developers and publisher. This mod is an unofficial, unaffiliated fan project and redistributes none of the game's files.
+
+AI assistance was used in the development of this mod.
